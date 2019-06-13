@@ -1,0 +1,1 @@
+swig -c++ -python e.i && g++ -O2 -fPIC -c e.cpp mult.cpp e_wrap.cxx -I/usr/include/python3.7m && g++ -shared e.o e_wrap.o mult.o -o _e.so
